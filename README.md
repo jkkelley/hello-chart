@@ -51,17 +51,17 @@ kubectl get nodes
 
 ### 2. Lint the chart
 ```bash
-helm lint ./hello-chart
+helm lint .
 ```
 
 ### 3. Render manifests
 ```bash
-helm template hello ./hello-chart | less
+helm template hello . | less
 ```
 
 ### 4. Install the chart
 ```bash
-helm install hello ./hello-chart
+helm install hello .
 ```
 
 ### Check resources:
